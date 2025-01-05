@@ -30,6 +30,8 @@
 		02CF71142C8AEE770078CAB6 /* DotLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CF71132C8AEE770078CAB6 /* DotLoadingView.swift */; };
 		32703BF82C998204006B2231 /* ContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32703BF72C998204006B2231 /* ContentListView.swift */; };
 		32703BFA2C99D186006B2231 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32703BF92C99D186006B2231 /* ListItem.swift */; };
+		327C600D2D297E53006D20ED /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C600C2D297E53006D20ED /* CameraView.swift */; };
+		327C60132D2ADB1A006D20ED /* HealthDataChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C60122D2ADB1A006D20ED /* HealthDataChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		02CF71132C8AEE770078CAB6 /* DotLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotLoadingView.swift; sourceTree = "<group>"; };
 		32703BF72C998204006B2231 /* ContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentListView.swift; sourceTree = "<group>"; };
 		32703BF92C99D186006B2231 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		327C600C2D297E53006D20ED /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		327C60122D2ADB1A006D20ED /* HealthDataChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,8 @@
 		02CF710E2C89B16F0078CAB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				327C60112D2ADB0F006D20ED /* Health */,
+				327C600B2D297E30006D20ED /* Zhao */,
 				02BD5B912C91D84300FC31F9 /* Todo */,
 				02CF710F2C89B17C0078CAB6 /* WeatherView.swift */,
 				02CF71132C8AEE770078CAB6 /* DotLoadingView.swift */,
@@ -197,6 +203,22 @@
 				32703BF92C99D186006B2231 /* ListItem.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		327C600B2D297E30006D20ED /* Zhao */ = {
+			isa = PBXGroup;
+			children = (
+				327C600C2D297E53006D20ED /* CameraView.swift */,
+			);
+			path = Zhao;
+			sourceTree = "<group>";
+		};
+		327C60112D2ADB0F006D20ED /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				327C60122D2ADB1A006D20ED /* HealthDataChartView.swift */,
+			);
+			path = Health;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +368,8 @@
 				0297E5582C95D984002462B9 /* PickerView.swift in Sources */,
 				32703BF82C998204006B2231 /* ContentListView.swift in Sources */,
 				0297E55A2C95E315002462B9 /* ToggleView.swift in Sources */,
+				327C600D2D297E53006D20ED /* CameraView.swift in Sources */,
+				327C60132D2ADB1A006D20ED /* HealthDataChartView.swift in Sources */,
 				02BD5B892C91907400FC31F9 /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,10 +536,15 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "授权使用相机进行拍照";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "授权访问健康数据来更新您的健康统计信息";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "授权访问健康数据来显示您的健康统计信息";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "授权访问相册保存图片";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,10 +568,15 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "授权使用相机进行拍照";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "授权访问健康数据来更新您的健康统计信息";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "授权访问健康数据来显示您的健康统计信息";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "授权访问相册保存图片";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

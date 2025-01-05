@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListView: View {
-    @State private var items = ["天气介绍", "进度展示", "加载动画", "DatePicker", "ButtonView", "图文混排-ContentListView"]
+    @State private var items = ["天气介绍", "进度展示", "加载动画", "DatePicker", "ButtonView", "图文混排-ContentListView", "CameraView", "HealthDataChartView"]
     @State private var selectedItem: String?
     @State private var isClicked = false
     @State private var clickedItem2 = false
@@ -62,6 +62,21 @@ struct ListView: View {
                         Text(item6)
                     }
                 }
+                
+                let item7: String = items[6]
+                Section(header: Text(item7)) {
+                    NavigationLink(destination:CameraView()) {
+                        Text(item7)
+                    }
+                }
+                
+                let item8 = items[7]
+                Section(header: Text(item8)) {
+                    NavigationLink(destination: HealthDataChartView()) {
+                        Text(item8)
+                    }
+                }
+                
             }
             
             .navigationBarTitle(Text("List"))

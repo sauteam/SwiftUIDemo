@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ReminderRowView: View {
     let store: ReminderStore
-    let reminder: Reminder
+    var reminder: Reminder
     //@EnvironmentObject var store: ReminderStore
     @State private var showingDetail = false
     

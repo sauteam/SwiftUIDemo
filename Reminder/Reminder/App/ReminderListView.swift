@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct ReminderListView: View {
-    @StateObject private var store = ReminderStore()
-    //@EnvironmentObject var store: ReminderStore
+    @EnvironmentObject var store: ReminderStore
     @State private var selectedReminder: Reminder?
     //@ObservedObject var store: ReminderStore
     @StateObject private var coordinator = AppCoordinator.shared
