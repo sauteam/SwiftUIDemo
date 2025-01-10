@@ -143,13 +143,13 @@
 			isa = PBXGroup;
 			children = (
 				020FA33B2C5BB79C00F684D1 /* FoodPickerApp.swift */,
-				020FA3872C5BB7C600F684D1 /* Screen */,
-				020FA3842C5BB7C500F684D1 /* Utils */,
+				020FA33F2C5BB79F00F684D1 /* Assets.xcassets */,
 				020FA3652C5BB7BF00F684D1 /* Constant */,
 				020FA36B2C5BB7BF00F684D1 /* Extension */,
 				020FA3692C5BB7BF00F684D1 /* Model */,
-				020FA33F2C5BB79F00F684D1 /* Assets.xcassets */,
 				020FA3412C5BB79F00F684D1 /* Preview Content */,
+				020FA3872C5BB7C600F684D1 /* Screen */,
+				020FA3842C5BB7C500F684D1 /* Utils */,
 			);
 			path = FoodPicker;
 			sourceTree = "<group>";

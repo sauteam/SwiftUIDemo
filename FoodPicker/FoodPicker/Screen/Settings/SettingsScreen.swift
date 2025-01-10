@@ -12,7 +12,7 @@ struct SettingsScreen: View {
     @AppStorage(.preferredWieghtUnit) private var unit: MyWeightUnit
     @AppStorage(.startTab) private var startTab: HomeScreen.Tab = .picker
     @State private var confirmationDialog: Dialog = .inactive
-    
+
     private var shouldShowDialog: Binding<Bool> {
         Binding(
             get: { confirmationDialog != .inactive },
@@ -47,9 +47,11 @@ struct SettingsScreen: View {
                                     actions: buildConfirmationDialogButtons) {
                     Text(confirmationDialog.message)
                 }
+
             }
 //            .navigationTitle("Setting")
 //            .navigationBarTitleDisplayMode(.inline)
+        
     }
     
     private func buildConfirmationDialogButtons() -> some View {

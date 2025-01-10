@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Array: RawRepresentable where Element: Codable {
+extension Array: @retroactive RawRepresentable where Element: Codable {
     public init?(rawValue: String) {
         guard let data = rawValue.data(using: .utf8),
               let array = try? JSONDecoder().decode(Self.self, from: data) else { return nil }
